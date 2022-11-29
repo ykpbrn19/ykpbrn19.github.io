@@ -1,0 +1,16 @@
+RewriteEngine on
+
+RewriteRule ^anasayfa(\.html)$ index.php [L,NC]
+RewriteRule ^index(\.html)$ index.php [L,NC]
+RewriteRule ^iletisim(\.html)$ iletisim.php [L,NC]
+RewriteRule ^arama(\.html)$ arama.php [L,NC]
+RewriteRule ^kategori-detay-([a-zA-Z0-9\-_]+)?(\.html)$ kategoridetay.php?id=$1 [L,QSA]
+RewriteRule ^proje-detay-([a-zA-Z0-9\-_]+)?(\.html)$ projedetay.php?id=$1 [L,QSA]
+RewriteRule ^haberler(\.html)$ haberler.php [L,NC]
+RewriteRule ^hizmetler(\.html)$ hizmetler.php [L,NC]
+RewriteRule ^hizmet-detay-([a-zA-Z0-9\-_]+)?(\.html)$ hizmetdetay.php?id=$1 [L,QSA]
+RewriteRule ^haber-detay-([a-zA-Z0-9\-_]+)?(\.html)$ haberdetay.php?id=$1 [L,QSA]
+RewriteRule ^sayfa-detay-([a-zA-Z0-9\-_]+)?(\.html)$ sayfadetay.php?id=$1 [L,QSA]
+RewriteRule ^foto-galeri(\.html)$ fotogaleri.php [L,NC]
+RewriteRule ^ekibimiz(\.html)$ ekibimiz.php [L,NC]
+RewriteRule ^projelerimiz(\.html)$ projelerimiz.php [L,NC]
